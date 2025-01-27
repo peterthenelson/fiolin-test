@@ -1,0 +1,10 @@
+{
+  "name": "fiolin-template",
+  "version": "1.0.0",
+  "description": "Collection of fiolin scripts",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "",
+  "license": "MIT"
+}
