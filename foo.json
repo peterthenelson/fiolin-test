@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "title": "1. Welcome to Fiolin",
+    "description": "Welcome to the Fiolin tutorial!\n\nWe've gotten you started with a simple script that copies a single input file into the output folder. Try editing it to change the output filename.\n",
+    "author": "Peter Nelson"
+  },
+  "interface": {
+    "inputFiles": "SINGLE",
+    "outputFiles": "SINGLE"
+  },
+  "runtime": {},
+  "code": {
+    "python": "\"\"\"Basic script that copies input to output.\"\"\"\nimport fiolin\nimport os\n\ninput = fiolin.get_input_basename()\nstem, ext = os.path.splitext(input)\n\n# TODO: Try changing the output filename (foo.txt -> foo-copy.txt or FOO.txt)\n# TODO: Also try using fiolin.get_input_basename(suffix='-copy')\n# TODO: Also try using fiolin.get_input_basename(ext='.TXT')\noutput = stem + ext\n\nprint(f'Copying /input/{input} to /output/{output}')\nfiolin.cp(f'/input/{input}', f'/output/{output}')\n"
+  }
+}
