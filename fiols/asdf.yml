@@ -1,0 +1,16 @@
+meta:
+  title: 1. Welcome to Fiolin
+  description: >
+    Welcome to the Fiolin tutorial!
+
+
+    @"
+      asdf
+      fdsa
+    "@
+  author: Peter Nelson
+interface:
+  inputFiles: SINGLE
+  outputFiles: SINGLE
+runtime: {}
+
